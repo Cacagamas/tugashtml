@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title> @_chrlla.vsg- 71231010 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <marquee behavior="scroll" direction="right">Personal Webpage</marquee>
+        </h1>
+    </header>
+    <section id="foto">
+        <img src="sharonpage.jpg" width ="350">
+    </section>
+    <section id="tentang-saya">
+        <h2>
+            Charolla Velovesia Sharon Gamas
+        </h2>
+        <type>
+            @_chrlla.vsg
+        </type>
+        <h3>
+            Kutai Barat,Kalimantan Timur
+        </h3>
+        <h4>
+            Duta Wacana Christian University
+        </h4>
+    </section>
+    <section id="keterampilan">
+        <h5>
+            Skillset
+            <ol>
+                <li>Coding C</li>
+                <li>Coding HTML</li>
+                <li>Coding CSS, JAVA</li>
+            </ol>
+        </h5>
+    </section>
+    
+    <button id="tombolGantiWarna">Ganti Warna</button>
+
+    <footer>
+    <h6>Thank You For Visiting</h6>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['#ff0000', '#0000ff', '##008000', '#ffffff']
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+        tombolGantiWarna.addEventListener('click',gantiWarnaRandom)
+    </script>
+</body>
+</html>
